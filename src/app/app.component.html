@@ -1,0 +1,9 @@
+<!-- QB.2) -->
+<button (click)="gameService.newGame()">Nouvelle partie</button>
+
+<!-- QB.1) -->
+<l3m-board
+*ngFor="let g of gameService.sigGame()" 
+[data]="g.board"
+(playChange)="gameService.play(g.id, $event)">
+</l3m-board>

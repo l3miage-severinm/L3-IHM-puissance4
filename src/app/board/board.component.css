@@ -1,0 +1,26 @@
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+td.highlight {
+    background-color: orange;
+}
+
+div {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+div.red {
+    background-color: red;
+}
+
+div.yellow {
+    background-color: yellow;
+}

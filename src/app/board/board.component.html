@@ -1,0 +1,19 @@
+<!-- QA.3) et QA.4) et QA.5) -->
+<table>
+    <tr *ngFor="let l of lines">
+
+        <td 
+        *ngFor="let c of columns" 
+        (click)="playChange.emit(c)"
+        (pointerenter)="selectedColumn.set(c)"
+        (pointerleave)="selectedColumn.set(undefined)"
+        [class.highlight]="selectedColumn() === c && data[0][c] === 'EMPTY'">
+
+            <div 
+            [class.red]="data[l][c] == 'RED'" 
+            [class.yellow]="data[l][c] == 'YELLOW'">
+            </div>
+
+        </td>
+    </tr>
+</table>
